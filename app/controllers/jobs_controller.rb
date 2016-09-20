@@ -1,20 +1,28 @@
 class JobsController < ApplicationController
   def index
-    Job.all
+    @jobs = Job.all
   end
 
   def show
-    Job.find(params[:id])
+    @job = Job.find(params[:id])
   end
 
   def new
-
+    @job = Job.new
   end
 
   def create
+    @job = Job.new(job_params)
+    if @job.save
+      flash[:notice] = "Job successfully created"
+      redirect_to @job
+    else
+      render '/new'
+    end
   end
 
   def edit
+
   end
 
   def update
