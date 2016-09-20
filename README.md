@@ -1,3 +1,5 @@
+Rails application to keep track of information related to jobs you are interested in.  
+
 == README
 
 This README would normally document whatever steps are necessary to get the
