@@ -22,12 +22,27 @@ class JobsController < ApplicationController
   end
 
   def edit
-
+    @job = Job.find(params[:id])
   end
 
   def update
-
+    @job = Job.find(params[:id])
+    if @job.update(job_params)
+      flash[:notice] = "Job successfully updated"
+      redirect_to @job
+    else
+      render '/new'
+    end
   end
+
+  def destroy
+    @job = Job.find(params[:id])
+    @job.destroy
+    flash[:notice] = "Job successfully deleted"
+    redirect_to jobs_path
+  end
+
+
 
 
   private

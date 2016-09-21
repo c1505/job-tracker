@@ -1,5 +1,15 @@
 <h1>Jobs</h1>
 <% @jobs.each do |job| %>
-  <%= job.title %>
-  <%= job.company %>
+  <h3><%= job.title %></h3>
+  <p><%= job.location %></p>
+  <p><%= job.company %></p>
+  <p><%= job.salary %></p>
+   <p><a class="btn btn-info" href="/jobs/<%= job.id %>" role="button">Show</a></p>
+
+   <p><a class="btn btn-primary" href="/jobs/<%= job.id %>/edit" role="button">Edit</a></p>
+
+  <div class="btn btn-danger">
+    <%= link_to 'Delete', job_path(job), :method => :delete %>
+  </div>
+
 <% end %>
