@@ -31,6 +31,12 @@ gem 'simple_form'
 
 gem 'terminal-notifier-guard', '~> 1.6.1'
 
+gem 'httparty'
+
+# gem 'dotenv-rails', :groups => [:development, :test]
+# maybe add this for secrets managment
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
