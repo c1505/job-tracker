@@ -26,17 +26,7 @@ RSpec.describe Indeed do
       expect(response["totalResults"]).to be all.count
     end
 
-    it "the results are unique"
-    # find or create_by
-
-    it "gets the full description"
-
-    it "gets the company name"
-
-    it "gets the location"
-
-    it "gets the link"
-
+    
 
   end
 end

@@ -6,6 +6,8 @@ RSpec.feature "Postings", type: :feature do
     expect(page).to have_content("Job Postings")
     expect(page).to have_content("Save Job")
   end
+
+  it "the results are unique"
 end
 
 # it "shows a job on the index page" do
