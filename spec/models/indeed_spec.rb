@@ -1,3 +1,5 @@
+require 'rails_helper'
+
 RSpec.describe Indeed do
   describe "indeed" do
     it "has a class" do
