@@ -69,5 +69,6 @@ group :test do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'selenium-webdriver'
+  gem 'simplecov', :require => false, :group => :test
   # gem "codeclimate-test-reporter", group: :test, require: nil
 end

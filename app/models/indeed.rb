@@ -1,5 +1,5 @@
 class Indeed
-  def initialize(zip_code, query)
+  def initialize(zip_code = 27713, query = "ruby")
     @publisher_key = Rails.application.secrets.indeed_key
     @zip_code = zip_code
     @query = query
@@ -25,5 +25,11 @@ class Indeed
     end
     responses.flatten
   end
+
+  def fetch_posting(job_key)
+     response = HTTParty.get("http://api.indeed.com/ads/apigetjobs?publisher=#{@publisher_key}&jobkeys=#{job_key}&v=2")
+     binding.pry
+  end
+
 
 end

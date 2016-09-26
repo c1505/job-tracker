@@ -18,7 +18,20 @@ I had to move my secrets to secrets.yml and modify a test file, but it was prett
 
 Ultimately, I want to show results on a page and save the ones that I want to apply to and/or further evaluate.
 
+## Saving a posting to the application
+Looks like I will have to scrape to get some of the information I want.  I want to save the complete posting body.  
 
+I guess I could start with the intermediate information and just create from the information I have access to through the api.  Still includes alot of the relevant information I need.  Then prompt the user to click the link for the full description.  
+
+This way I can still accomplish the goal of knowing where the job lies on my processing.  Viewed, Applied, ect...
+
+## Do
+ 
+
+## Maybe
+create a job from posting without additional request to indeed
+
+# Done
 
 ### Issues
 Guard broke.  not sure why
@@ -32,6 +45,8 @@ require "rails_helper"
 
 #### Issue 2
 My tests did not see my secret key... well that is because I only added it to
+
+
 
 ``` ruby
 development:

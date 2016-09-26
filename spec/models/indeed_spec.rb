@@ -26,7 +26,13 @@ RSpec.describe Indeed do
       expect(response["totalResults"]).to be all.count
     end
 
-    
+    it "can fetch a single posting" do
+      indeed = Indeed.new
+      posting_id = "0d5af1eef0379e6a"
+      indeed.fetch_posting(posting_id)
+    end
+
+
 
   end
 end

@@ -8,6 +8,15 @@ RSpec.feature "Postings", type: :feature do
   end
 
   it "the results are unique"
+
+  it "can save posting to jobs" do
+    visit '/postings'
+    first('.boxy').click_link("Save Job")
+    expect(page).to have_content("Job successfully saved")
+    # click link
+    # saves job posting
+    # gives a message if it was successful
+  end
 end
 
 # it "shows a job on the index page" do
