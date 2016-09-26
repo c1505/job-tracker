@@ -30,6 +30,7 @@ RSpec.describe Indeed do
       indeed = Indeed.new
       posting_id = "0d5af1eef0379e6a"
       indeed.fetch_posting(posting_id)
+      # response["response"]["results"]["result"]["jobtitle"]
     end
 
 
