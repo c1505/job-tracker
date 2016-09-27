@@ -5,6 +5,18 @@ class PostingsController < ApplicationController
   end
 
   def create
+    indeed = Indeed.new
+    posting_id = "0d5af1eef0379e6a"
+    response = indeed.fetch_posting(posting_id)
+    job_title = response["response"]["results"]["result"]["jobtitle"]
+    job = Job.new(title: job_title)
+    if job.save
+      redirect_to postings_path
+      flash[:notice] = "Job successfully saved"
+    else
+      redirect_to postings_path
+      flash[:notice] = "Error.  Job not saved"
+    end
     # fetch data from one posting
     # create a job with that data
     # indeed = Job.new()

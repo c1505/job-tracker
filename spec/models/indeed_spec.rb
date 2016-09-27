@@ -29,8 +29,9 @@ RSpec.describe Indeed do
     it "can fetch a single posting" do
       indeed = Indeed.new
       posting_id = "0d5af1eef0379e6a"
-      indeed.fetch_posting(posting_id)
-      # response["response"]["results"]["result"]["jobtitle"]
+      response = indeed.fetch_posting(posting_id)
+      job_title = response["response"]["results"]["result"]["jobtitle"]
+      expect(job_title).to eq "Software Engineer - University Grad"
     end
 
 
