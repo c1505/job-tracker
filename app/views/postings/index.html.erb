@@ -1,4 +1,5 @@
 <h1>Job Postings</h1>
+
 <div class="row">
   <% @postings["results"].each do |f| %>
     <div class="col-md-4 boxy">
@@ -7,7 +8,9 @@
       <p><%= f["city"] %><p>
       <p><%= f["snippet"].html_safe %><p>
       <p><%= f["formattedRelativeTime"] %><p>
-      <%= button_to "Save Job", postings_path(:method => :post)%>
+      <%= button_to "Save Job", { action: "create", id: f["jobkey"] },
+                                  method: :post%>
+      <!-- <%= button_to "Save Job", postings_path(:method => :post)%> -->
     </div>
   <% end %>
 </div>

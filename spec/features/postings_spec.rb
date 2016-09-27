@@ -11,8 +11,9 @@ RSpec.feature "Postings", type: :feature do
     visit '/postings'
     first('.boxy').click_button("Save Job")
     expect(page).to have_content("Job successfully saved")
-    visit '/jobs'
-    expect(page).to have_content("Software Engineer - University Grad")
+    expect(Job.all.count).to equal 1
+    # expect(page).to have_content("e Engineer - University Grad")
+    # Now that I am not
   end
 
   it "the results are unique"

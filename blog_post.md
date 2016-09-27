@@ -26,10 +26,12 @@ I guess I could start with the intermediate information and just create from the
 This way I can still accomplish the goal of knowing where the job lies on my processing.  Viewed, Applied, ect...
 
 ## Do
- 
+-only show unsaved jobs in job posting view
+-only show unviewed jobs in job posting view
 
 ## Maybe
-create a job from posting without additional request to indeed
+-create a job from posting without additional request to indeed
+-save a job from posting via javascript instead to avoid page refresh
 
 # Done
 
@@ -46,7 +48,8 @@ require "rails_helper"
 #### Issue 2
 My tests did not see my secret key... well that is because I only added it to
 
-
+## Random
+Learned that I can't visit a page and have a second expect withing one Rspec block
 
 ``` ruby
 development:
