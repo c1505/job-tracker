@@ -17,6 +17,14 @@ RSpec.feature "Postings", type: :feature do
   end
 
   it "the results are unique"
+  
+  it "doesn't show postings already viewed"
+    # visit '/postings'
+    # first('.boxy').click_button("Save Job")
+    # expect(page).not_to have_content("The name of the job")
+    # 
+    
+    # Job.last.indeed_id
 
 end
 

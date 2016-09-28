@@ -8,6 +8,7 @@
       <p><%= f["city"] %><p>
       <p><%= f["snippet"].html_safe %><p>
       <p><%= f["formattedRelativeTime"] %><p>
+      <p><%= link_to "Link", f["url"] %><p>
       <%= button_to "Save Job", { action: "create", id: f["jobkey"] },
                                   method: :post%>
       <!-- <%= button_to "Save Job", postings_path(:method => :post)%> -->

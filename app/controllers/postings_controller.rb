@@ -6,10 +6,9 @@ class PostingsController < ApplicationController
 
   def create
     indeed = Indeed.new
-    # posting_id = "0d5af1eef0379e6a"
     posting_id = params["id"]
     response = indeed.fetch_posting(posting_id)
-    job_title = response["response"]["results"]["result"]["jobtitle"]
+    job_title = response["response"]["results"]["result"]["jobtitle"] #likely move this to indeed
     job = Job.new(title: job_title)
     if job.save
       redirect_to postings_path
