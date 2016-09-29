@@ -26,15 +26,15 @@ I guess I could start with the intermediate information and just create from the
 This way I can still accomplish the goal of knowing where the job lies on my processing.  Viewed, Applied, ect...
 
 ## Do
--only show unsaved jobs in job posting view
--only show unviewed jobs in job posting view
+- go to job edit page after clicking save to enter in more information
 
 ## Maybe
 -create a job from posting without additional request to indeed
 -save a job from posting via javascript instead to avoid page refresh
 
 # Done
-
+-only show unsaved jobs in job posting view
+-only show unviewed jobs in job posting view
 
 
 
@@ -61,6 +61,11 @@ I think I need to delete what is in the json if it matches anything that is stor
 You want to test that you are hitting an api when if you do, but the tests that aren't related explicitly to that, probably should fake it.  
 
 What to do when you don't know what api data you will get... it will change  
+
+## Resources 
+### Inspiration
+http://www.forbes.com/sites/nextavenue/2015/05/04/job-search-3-online-tools-to-stay-on-track/#51437e0532bc 
+
 
 ``` ruby
 development:
