@@ -14,26 +14,26 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-09-27T00:03:14-04:00">2016-09-27T00:03:14-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-09-28T23:34:20-04:00">2016-09-28T23:34:20-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">95.28%</span></span>
+    (<span class="covered_percent"><span class="green">95.45%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.01
+         1.32
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>27</b> files in total.
-    <b>254</b> relevant lines. 
-    <span class="green"><b>242</b> lines covered</span> and
+    <b>28</b> files in total.
+    <b>264</b> relevant lines. 
+    <span class="green"><b>252</b> lines covered</span> and
     <span class="red"><b>12</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -62,10 +62,10 @@
       
       <tr>
         <td class="strong"><a href="#75cb44886e372fbb69b07ff14ee5485e96a2f02d" class="src_link" title="app/controllers/postings_controller.rb">app/controllers/postings_controller.rb</a></td>
-        <td class="yellow strong">86.67 %</td>
-        <td>25</td>
-        <td>15</td>
-        <td>13</td>
+        <td class="yellow strong">87.5 %</td>
+        <td>28</td>
+        <td>16</td>
+        <td>14</td>
         <td>2</td>
         <td>1.1</td>
       </tr>
@@ -108,6 +108,16 @@
         <td>2</td>
         <td>0</td>
         <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#9e324adbef9dbcd81df0d1c273deb4a13a669c49" class="src_link" title="app/models/posting.rb">app/models/posting.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>17</td>
+        <td>8</td>
+        <td>8</td>
+        <td>0</td>
+        <td>11.5</td>
       </tr>
       
       <tr>
@@ -303,9 +313,9 @@
       <tr>
         <td class="strong"><a href="#c074d7d084a99959fa045e3712ddd6fb8d5d92b0" class="src_link" title="spec/features/postings_spec.rb">spec/features/postings_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>29</td>
-        <td>12</td>
-        <td>12</td>
+        <td>37</td>
+        <td>13</td>
+        <td>13</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -387,10 +397,10 @@
         <div class="source_table" id="75cb44886e372fbb69b07ff14ee5485e96a2f02d">
   <div class="header">
     <h3>app/controllers/postings_controller.rb</h3>
-    <h4><span class="yellow">86.67 %</span> covered</h4>
+    <h4><span class="yellow">87.5 %</span> covered</h4>
     <div>
-      <b>15</b> relevant lines. 
-      <span class="green"><b>13</b> lines covered</span> and
+      <b>16</b> relevant lines. 
+      <span class="green"><b>14</b> lines covered</span> and
       <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
@@ -413,136 +423,154 @@
         <li class="covered" data-hits="3" data-linenumber="3">
           <span class="hits">3</span>
           
-          <code class="ruby">    indeed = Indeed.new(27713, &quot;Ruby&quot;)</code>
+          <code class="ruby">    posting = Posting.new</code>
         </li>
       
         <li class="covered" data-hits="3" data-linenumber="4">
           <span class="hits">3</span>
           
-          <code class="ruby">    @postings = indeed.fetch_one</code>
+          <code class="ruby">    @postings = posting.desired_postings</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    # indeed = Indeed.new(27713, &quot;Ruby&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="6">
           
           
+          <code class="ruby">    # @postings = indeed.fetch_one</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="7">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def create</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    indeed = Indeed.new</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby">    # posting_id = &quot;0d5af1eef0379e6a&quot;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    posting_id = params[&quot;id&quot;]</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    response = indeed.fetch_posting(posting_id)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    job_title = response[&quot;response&quot;][&quot;results&quot;][&quot;result&quot;][&quot;jobtitle&quot;]</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    job = Job.new(title: job_title)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="14">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    if job.save</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="15">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      redirect_to postings_path</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      flash[:notice] = &quot;Job successfully saved&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="17">
-          
-          
-          <code class="ruby">    else</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="18">
-          
-          
-          <code class="ruby">      redirect_to postings_path</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="19">
-          
-          
-          <code class="ruby">      flash[:notice] = &quot;Error.  Job not saved&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="20">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
-          
-          
-          <code class="ruby">    # fetch data from one posting</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="22">
-          
-          
-          <code class="ruby">    # create a job with that data</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="23">
-          
-          
-          <code class="ruby">    # indeed = Job.new()</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="24">
+        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby">  end</code>
         </li>
       
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    indeed = Indeed.new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    posting_id = params[&quot;id&quot;]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    response = indeed.fetch_posting(posting_id)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    job_title = response[&quot;response&quot;][&quot;results&quot;][&quot;result&quot;][&quot;jobtitle&quot;] #likely move this to indeed</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    job = Job.new(title: job_title)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    Posting.create(not_interested: posting_id)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    if job.save</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      redirect_to postings_path</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      flash[:notice] = &quot;Job successfully saved&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="21">
+          
+          
+          <code class="ruby">      redirect_to postings_path</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="22">
+          
+          
+          <code class="ruby">      flash[:notice] = &quot;Error.  Job not saved&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">    # fetch data from one posting</code>
+        </li>
+      
         <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">    # create a job with that data</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">    # indeed = Job.new()</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
           
           
           <code class="ruby">end</code>
@@ -864,6 +892,126 @@
           
           
           <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="9e324adbef9dbcd81df0d1c273deb4a13a669c49">
+  <div class="header">
+    <h3>app/models/posting.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>8</b> relevant lines. 
+      <span class="green"><b>8</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Posting &lt; ActiveRecord::Base</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def desired_postings</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="3">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    indeed = Indeed.new(27713, &quot;Ruby&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="4">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    results = indeed.fetch_one[&quot;results&quot;]</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="5">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    seen = [&quot;e63408c881dc7a51&quot;, &quot;5546293dfc5ce2f2&quot;]</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="6">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    results.delete_if do |result|</code>
+        </li>
+      
+        <li class="covered" data-hits="75" data-linenumber="7">
+          <span class="hits">75</span>
+          
+          <code class="ruby">      Posting.find_by(not_interested: result[&quot;jobkey&quot;])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="9">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    results</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">    # in here i should process incoming postings from indeed.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">    # if they have been saved or indicated not interested, i don&#39;t want them to show up</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">    # could later even decide to purge this table every once in a while based on the date.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby"># i suppose it shouldn&#39;t be unordered though.  If I am finding something, I should start with the most recently added key.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"># should probably just use serialize</code>
         </li>
       
     </ol>
@@ -6143,8 +6291,8 @@
     <h3>spec/features/postings_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>12</b> relevant lines. 
-      <span class="green"><b>12</b> lines covered</span> and
+      <b>13</b> relevant lines. 
+      <span class="green"><b>13</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -6269,58 +6417,106 @@
         <li class="never" data-hits="" data-linenumber="20">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  </code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">end</code>
+          <code class="ruby">  it &quot;doesn&#39;t show postings already viewed&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="22">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    # visit &#39;/postings&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="23">
           
           
-          <code class="ruby"># it &quot;shows a job on the index page&quot; do</code>
+          <code class="ruby">    # first(&#39;.boxy&#39;).click_button(&quot;Save Job&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
           
           
-          <code class="ruby">#   Job.create(title: &quot;title&quot;, company: &quot;company&quot;)</code>
+          <code class="ruby">    # expect(page).not_to have_content(&quot;The name of the job&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
           
           
-          <code class="ruby">#   visit &#39;/jobs&#39;</code>
+          <code class="ruby">    # </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="26">
           
           
-          <code class="ruby">#   expect(page).to have_content(&quot;title&quot;)</code>
+          <code class="ruby">    </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="27">
           
           
-          <code class="ruby">#   expect(page).to have_content(&quot;company&quot;)</code>
+          <code class="ruby">    # Job.last.indeed_id</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="28">
           
           
-          <code class="ruby">#   expect(current_path).to eq jobs_path</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby"># it &quot;shows a job on the index page&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">#   Job.create(title: &quot;title&quot;, company: &quot;company&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">#   visit &#39;/jobs&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">#   expect(page).to have_content(&quot;title&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">#   expect(page).to have_content(&quot;company&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">#   expect(current_path).to eq jobs_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
           
           
           <code class="ruby"># end</code>

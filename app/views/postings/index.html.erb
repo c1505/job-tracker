@@ -1,7 +1,7 @@
 <h1>Job Postings</h1>
 
 <div class="row">
-  <% @postings["results"].each do |f| %>
+  <% @postings.each do |f| %>
     <div class="col-md-4 boxy">
       <p><%= f["jobtitle"] %><p>
       <p><%= f["company"] %><p>

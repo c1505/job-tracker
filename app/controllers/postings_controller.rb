@@ -1,7 +1,10 @@
 class PostingsController < ApplicationController
   def index
-    indeed = Indeed.new(27713, "Ruby")
-    @postings = indeed.fetch_one
+    posting = Posting.new
+    @postings = posting.desired_postings
+    # indeed = Indeed.new(27713, "Ruby")
+    # @postings = indeed.fetch_one
+
   end
 
   def create
@@ -10,6 +13,7 @@ class PostingsController < ApplicationController
     response = indeed.fetch_posting(posting_id)
     job_title = response["response"]["results"]["result"]["jobtitle"] #likely move this to indeed
     job = Job.new(title: job_title)
+    Posting.create(not_interested: posting_id)
     if job.save
       redirect_to postings_path
       flash[:notice] = "Job successfully saved"

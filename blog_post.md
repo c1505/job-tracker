@@ -35,6 +35,9 @@ This way I can still accomplish the goal of knowing where the job lies on my pro
 
 # Done
 
+
+
+
 ### Issues
 Guard broke.  not sure why
 
@@ -50,6 +53,14 @@ My tests did not see my secret key... well that is because I only added it to
 
 ## Random
 Learned that I can't visit a page and have a second expect withing one Rspec block
+
+### How to process incoming postings to remove the ones that I don't want to display?
+I think I need to delete what is in the json if it matches anything that is stored.  
+
+### Faking hitting an api in tests
+You want to test that you are hitting an api when if you do, but the tests that aren't related explicitly to that, probably should fake it.  
+
+What to do when you don't know what api data you will get... it will change  
 
 ``` ruby
 development:
