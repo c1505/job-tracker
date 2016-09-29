@@ -30,7 +30,7 @@ RSpec.describe Indeed do
       indeed = Indeed.new
       posting_id = "0d5af1eef0379e6a"
       response = indeed.fetch_posting(posting_id)
-      job_title = response["response"]["results"]["result"]["jobtitle"]
+      job_title = response["jobtitle"]
       expect(job_title).to eq "Software Engineer - University Grad"
     end
 

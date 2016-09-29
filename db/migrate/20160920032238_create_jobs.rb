@@ -14,6 +14,7 @@ class CreateJobs < ActiveRecord::Migration
       t.string :next_step
       t.string :title
       t.string :company
+      t.string :url
       t.references :user, index: true, foreign_key: true
 
       t.timestamps null: false

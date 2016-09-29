@@ -1,3 +1,21 @@
+## Do
+- go to job edit page after clicking save to enter in more information
+-turn interview date into just a text field with placeholder or a different selector
+-add more information upon creating a job posting
+-refactor indeed.rb
+
+## Maybe
+-create a job from posting without additional request to indeed
+-save a job from posting via javascript instead to avoid page refresh
+
+# Done
+-only show unsaved jobs in job posting view
+-only show unviewed jobs in job posting view
+
+
+
+
+
 Moving a previous sinatra application to rails in order to expand features.
 
 You can view the previous application here.
@@ -25,16 +43,7 @@ I guess I could start with the intermediate information and just create from the
 
 This way I can still accomplish the goal of knowing where the job lies on my processing.  Viewed, Applied, ect...
 
-## Do
-- go to job edit page after clicking save to enter in more information
 
-## Maybe
--create a job from posting without additional request to indeed
--save a job from posting via javascript instead to avoid page refresh
-
-# Done
--only show unsaved jobs in job posting view
--only show unviewed jobs in job posting view
 
 
 
@@ -62,9 +71,9 @@ You want to test that you are hitting an api when if you do, but the tests that 
 
 What to do when you don't know what api data you will get... it will change  
 
-## Resources 
+## Resources
 ### Inspiration
-http://www.forbes.com/sites/nextavenue/2015/05/04/job-search-3-online-tools-to-stay-on-track/#51437e0532bc 
+http://www.forbes.com/sites/nextavenue/2015/05/04/job-search-3-online-tools-to-stay-on-track/#51437e0532bc
 
 
 ``` ruby

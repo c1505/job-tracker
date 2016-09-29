@@ -1,9 +1,10 @@
-<h1>Edit <%= @job.title %></h1>
+<h1>Edit</h1>
+<h2><%= @job.title %></h2>
+<%= link_to "View on Indeed", @job.url %>
 <%= simple_form_for @job do |f|%>
   <%= f.input :title %>
   <%= f.input :company %>
   <%= f.input :location %>
-  <%= f.input :salary %>
   <%= f.input :contacts %>
   <%= f.input :company_info %>
   <%= f.input :build %>
@@ -12,6 +13,8 @@
   <%= f.input :learn_technical %>
   <%= f.input :interested %>
   <%= f.input :contacted %>
-  <%= f.input :body %>
+  <%= f.input :salary %>
+  <%= f.input :body, :input_html => {:rows => 10} %>
+  <%= f.input :url %>
   <%= f.submit %>
 <% end %>

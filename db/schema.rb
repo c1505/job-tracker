@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20160928220343) do
     t.string   "next_step"
     t.string   "title"
     t.string   "company"
+    t.string   "url"
     t.integer  "user_id"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false

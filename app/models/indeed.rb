@@ -28,7 +28,9 @@ class Indeed
 
   def fetch_posting(job_key)
      response = HTTParty.get("http://api.indeed.com/ads/apigetjobs?publisher=#{@publisher_key}&jobkeys=#{job_key}&v=2")
+     response["response"]["results"]["result"]
   end
+  
 
 
 end

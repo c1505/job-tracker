@@ -17,14 +17,15 @@ RSpec.feature "Postings", type: :feature do
   end
 
   it "the results are unique"
-  
-  it "doesn't show postings already saved" do 
+
+  it "doesn't show postings already saved" do
     visit '/postings'
     first('.boxy').click_button("Save Job")
+    visit '/postings'
     expect(page).to have_selector('.boxy', count: 24)
   end
-  
-  it "doesn't show postings after clicking not interested" do 
+
+  it "doesn't show postings after clicking not interested" do
     visit '/postings'
     first('.boxy').click_button("Not Interested")
     expect(page).to have_selector('.boxy', count: 24)

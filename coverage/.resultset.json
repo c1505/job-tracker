@@ -1,14 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/ubuntu/workspace/job-tracker/spec/controllers/jobs_controller_spec.rb": [
+      "/Users/Corey/dev/projects/job-tracker/spec/controllers/jobs_controller_spec.rb": [
         1,
         null,
         1,
         null,
         null
       ],
-      "/home/ubuntu/workspace/job-tracker/spec/rails_helper.rb": [
+      "/Users/Corey/dev/projects/job-tracker/spec/rails_helper.rb": [
         null,
         1,
         1,
@@ -67,14 +67,14 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/job-tracker/config/environment.rb": [
+      "/Users/Corey/dev/projects/job-tracker/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/home/ubuntu/workspace/job-tracker/config/application.rb": [
+      "/Users/Corey/dev/projects/job-tracker/config/application.rb": [
         1,
         null,
         1,
@@ -111,12 +111,12 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/job-tracker/config/boot.rb": [
+      "/Users/Corey/dev/projects/job-tracker/config/boot.rb": [
         1,
         null,
         1
       ],
-      "/home/ubuntu/workspace/job-tracker/config/environments/test.rb": [
+      "/Users/Corey/dev/projects/job-tracker/config/environments/test.rb": [
         1,
         null,
         null,
@@ -160,7 +160,7 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/job-tracker/config/initializers/assets.rb": [
+      "/Users/Corey/dev/projects/job-tracker/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -173,7 +173,7 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/job-tracker/config/initializers/backtrace_silencers.rb": [
+      "/Users/Corey/dev/projects/job-tracker/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -182,12 +182,12 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/job-tracker/config/initializers/cookies_serializer.rb": [
+      "/Users/Corey/dev/projects/job-tracker/config/initializers/cookies_serializer.rb": [
         null,
         null,
         1
       ],
-      "/home/ubuntu/workspace/job-tracker/config/initializers/devise.rb": [
+      "/Users/Corey/dev/projects/job-tracker/config/initializers/devise.rb": [
         null,
         null,
         1,
@@ -457,13 +457,13 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/job-tracker/config/initializers/filter_parameter_logging.rb": [
+      "/Users/Corey/dev/projects/job-tracker/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/home/ubuntu/workspace/job-tracker/config/initializers/inflections.rb": [
+      "/Users/Corey/dev/projects/job-tracker/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -481,18 +481,18 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/job-tracker/config/initializers/mime_types.rb": [
+      "/Users/Corey/dev/projects/job-tracker/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/home/ubuntu/workspace/job-tracker/config/initializers/session_store.rb": [
+      "/Users/Corey/dev/projects/job-tracker/config/initializers/session_store.rb": [
         null,
         null,
         1
       ],
-      "/home/ubuntu/workspace/job-tracker/config/initializers/simple_form.rb": [
+      "/Users/Corey/dev/projects/job-tracker/config/initializers/simple_form.rb": [
         null,
         1,
         null,
@@ -659,7 +659,7 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/job-tracker/config/initializers/simple_form_bootstrap.rb": [
+      "/Users/Corey/dev/projects/job-tracker/config/initializers/simple_form_bootstrap.rb": [
         null,
         1,
         1,
@@ -810,7 +810,7 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/job-tracker/config/initializers/wrap_parameters.rb": [
+      "/Users/Corey/dev/projects/job-tracker/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -826,7 +826,7 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/job-tracker/spec/factories/jobs.rb": [
+      "/Users/Corey/dev/projects/job-tracker/spec/factories/jobs.rb": [
         1,
         1,
         1,
@@ -846,14 +846,14 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/job-tracker/spec/factories/users.rb": [
+      "/Users/Corey/dev/projects/job-tracker/spec/factories/users.rb": [
         1,
         1,
         null,
         null,
         null
       ],
-      "/home/ubuntu/workspace/job-tracker/config/routes.rb": [
+      "/Users/Corey/dev/projects/job-tracker/config/routes.rb": [
         1,
         1,
         1,
@@ -917,7 +917,7 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/job-tracker/app/models/user.rb": [
+      "/Users/Corey/dev/projects/job-tracker/app/models/user.rb": [
         1,
         null,
         null,
@@ -927,15 +927,15 @@
         1,
         null
       ],
-      "/home/ubuntu/workspace/job-tracker/app/helpers/application_helper.rb": [
+      "/Users/Corey/dev/projects/job-tracker/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/ubuntu/workspace/job-tracker/app/helpers/jobs_helper.rb": [
+      "/Users/Corey/dev/projects/job-tracker/app/helpers/jobs_helper.rb": [
         1,
         null
       ],
-      "/home/ubuntu/workspace/job-tracker/app/controllers/jobs_controller.rb": [
+      "/Users/Corey/dev/projects/job-tracker/app/controllers/jobs_controller.rb": [
         1,
         1,
         4,
@@ -960,7 +960,7 @@
         null,
         null,
         1,
-        1,
+        3,
         null,
         null,
         1,
@@ -991,14 +991,14 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/job-tracker/app/controllers/application_controller.rb": [
+      "/Users/Corey/dev/projects/job-tracker/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
         null
       ],
-      "/home/ubuntu/workspace/job-tracker/spec/features/jobs_spec.rb": [
+      "/Users/Corey/dev/projects/job-tracker/spec/features/jobs_spec.rb": [
         1,
         null,
         1,
@@ -1048,7 +1048,7 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/job-tracker/spec/features/postings_spec.rb": [
+      "/Users/Corey/dev/projects/job-tracker/spec/features/postings_spec.rb": [
         1,
         null,
         1,
@@ -1073,66 +1073,6 @@
         1,
         1,
         1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/ubuntu/workspace/job-tracker/spec/helpers/jobs_helper_spec.rb": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null
-      ],
-      "/home/ubuntu/workspace/job-tracker/spec/models/indeed_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
         1,
         null,
         null,
@@ -1140,41 +1080,6 @@
         1,
         1,
         1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         null,
         null,
         null,
@@ -1186,16 +1091,112 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/job-tracker/app/models/indeed.rb": [
+      "/Users/Corey/dev/projects/job-tracker/spec/helpers/jobs_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/Corey/dev/projects/job-tracker/spec/models/indeed_spec.rb": [
+        1,
+        null,
         1,
         1,
-        13,
-        13,
-        13,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null,
         1,
-        9,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/Corey/dev/projects/job-tracker/app/models/indeed.rb": [
+        1,
+        1,
+        12,
+        12,
+        12,
+        null,
+        null,
+        1,
+        8,
         null,
         null,
         1,
@@ -1217,35 +1218,37 @@
         null,
         1,
         3,
+        3,
+        null,
         null,
         null,
         null,
         null
       ],
-      "/home/ubuntu/workspace/job-tracker/spec/models/job_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/job-tracker/app/models/job.rb": [
-        1,
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/job-tracker/spec/models/user_spec.rb": [
+      "/Users/Corey/dev/projects/job-tracker/spec/models/job_spec.rb": [
         1,
         null,
         1,
         1,
         null
       ],
-      "/home/ubuntu/workspace/job-tracker/app/controllers/postings_controller.rb": [
+      "/Users/Corey/dev/projects/job-tracker/app/models/job.rb": [
         1,
         1,
-        7,
-        7,
+        null
+      ],
+      "/Users/Corey/dev/projects/job-tracker/spec/models/user_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/Corey/dev/projects/job-tracker/app/controllers/postings_controller.rb": [
+        1,
+        1,
+        6,
+        6,
         null,
         null,
         null,
@@ -1254,10 +1257,17 @@
         1,
         2,
         2,
+        null,
+        2,
+        null,
         2,
         2,
         2,
         2,
+        null,
+        2,
+        2,
+        null,
         2,
         2,
         2,
@@ -1276,15 +1286,15 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/job-tracker/app/models/posting.rb": [
+      "/Users/Corey/dev/projects/job-tracker/app/models/posting.rb": [
         1,
         1,
-        7,
-        7,
-        7,
-        175,
+        6,
+        6,
+        6,
+        150,
         null,
-        7,
+        6,
         null,
         null,
         null,
@@ -1295,6 +1305,6 @@
         null
       ]
     },
-    "timestamp": 1475180151
+    "timestamp": 1475186825
   }
 }
