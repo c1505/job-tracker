@@ -11,7 +11,8 @@
       <p><%= link_to "Link", f["url"] %><p>
       <%= button_to "Save Job", { action: "create", id: f["jobkey"] },
                                   method: :post%>
-      <!-- <%= button_to "Save Job", postings_path(:method => :post)%> -->
+      <%= button_to "Not Interested", { action: "not_interested", id: f["jobkey"] },
+                                  method: :post%>
     </div>
   <% end %>
 </div>

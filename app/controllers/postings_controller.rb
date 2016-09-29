@@ -21,8 +21,13 @@ class PostingsController < ApplicationController
       redirect_to postings_path
       flash[:notice] = "Error.  Job not saved"
     end
-    # fetch data from one posting
-    # create a job with that data
-    # indeed = Job.new()
+    # i don't know if create is the right name for this since it is create a job, but in a different way than normal crud
+  end
+  
+  def not_interested
+    posting_id = params["id"]
+    Posting.create(not_interested: posting_id)
+    redirect_to postings_path
+    flash[:notice] = "Marked as not interested.  You will not see that posting again."
   end
 end

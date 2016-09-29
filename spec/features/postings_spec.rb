@@ -18,14 +18,17 @@ RSpec.feature "Postings", type: :feature do
 
   it "the results are unique"
   
-  it "doesn't show postings already viewed"
-    # visit '/postings'
-    # first('.boxy').click_button("Save Job")
-    # expect(page).not_to have_content("The name of the job")
-    # 
-    
-    # Job.last.indeed_id
-
+  it "doesn't show postings already saved" do 
+    visit '/postings'
+    first('.boxy').click_button("Save Job")
+    expect(page).to have_selector('.boxy', count: 24)
+  end
+  
+  it "doesn't show postings after clicking not interested" do 
+    visit '/postings'
+    first('.boxy').click_button("Not Interested")
+    expect(page).to have_selector('.boxy', count: 24)
+  end
 end
 
 # it "shows a job on the index page" do
