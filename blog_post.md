@@ -1,18 +1,24 @@
 ## Do
-- go to job edit page after clicking save to enter in more information
+-add notes field
 -turn interview date into just a text field with placeholder or a different selector
--add more information upon creating a job posting
 -refactor indeed.rb
+
 
 ## Maybe
 -create a job from posting without additional request to indeed
 -save a job from posting via javascript instead to avoid page refresh
 
-# Done
+## Done
 -only show unsaved jobs in job posting view
 -only show unviewed jobs in job posting view
+- go to job edit page after clicking save to enter in more information
+-add more information upon creating a job posting
 
 
+# Status
+It seems useful in the current state.  I should probably start dogfooding it.  Authorization not setup yet though.  
+
+# Intro
 
 
 
