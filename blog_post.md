@@ -14,10 +14,21 @@
 - go to job edit page after clicking save to enter in more information
 -add more information upon creating a job posting
 
+# Heroku
+Had a lot of trouble trying to deploy to heroku.  I didn't have my secrets.yml tracked in git, but i needed to according to heroku.  Devise needs a secret key.  
+
+For some reason even after including my secrets.yml in git, it was still failing.  After some debugging, I figured out that it wasn't seeing the publisher_key.  Also that I should log better and fail at the beginning of methods.  I don't really know how to do a good job debugging in production.  There is probably a heroku console.  Yup!  Well google searching really failed me there.  Debug heroku basically got me nothing.  I could have figured this out really quickly with the console.  Oh well.
+
+http://tammersaleh.com/posts/managing-heroku-environment-variables-for-local-development/ Helped me figure out how to actually put environment variables into heroku.  I was confused at first because when I wrote ``` Heroku Config ``` I expected to see my variable name because it was in the yaml file.  It wasn't there.  I could still add it fairly easily though once I knew how.  Just didn't think it would work.  Felt good when it finally did :) .
+
+# Squashing Commits
+I don't really think I need to
 
 # Status
 It seems useful in the current state.  I should probably start dogfooding it.  Authorization not setup yet though.  
 
+Having a lot of issues trying to deploy on heroku.  
+Currently the call to the api that is working locally doesn't seem to be working in heroku.  
 # Intro
 
 

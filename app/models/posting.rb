@@ -1,7 +1,13 @@
 class Posting < ActiveRecord::Base
   def desired_postings
     indeed = Indeed.new(27713, "Ruby")
-    results = indeed.fetch_one["results"]
+    # results = indeed.fetch_one["results"]
+    results = indeed.fetch_one
+    if results["error"]
+      print results["error"]
+    end
+    results = results["results"]
+
     results.delete_if do |result|
       Posting.find_by(not_interested: result["jobkey"])
     end

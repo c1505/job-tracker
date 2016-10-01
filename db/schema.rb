@@ -33,7 +33,6 @@ ActiveRecord::Schema.define(version: 20160928220343) do
     t.datetime "updated_at",      null: false
   end
 
-  add_index "jobs", ["user_id"], name: "index_jobs_on_user_id"
 
   create_table "postings", force: :cascade do |t|
     t.string "not_interested"
