@@ -4,6 +4,8 @@
   <p><%= job.location %></p>
   <p><%= job.company %></p>
   <p><%= job.salary %></p>
+  <p><%= link_to "Indeed", job.url %></p>
+
    <p><a class="btn btn-info" href="/jobs/<%= job.id %>" role="button">Show</a></p>
 
    <p><a class="btn btn-primary" href="/jobs/<%= job.id %>/edit" role="button">Edit</a></p>

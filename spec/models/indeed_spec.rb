@@ -34,6 +34,7 @@ RSpec.describe Indeed do
       expect(job_title).to eq "Software Engineer - University Grad"
     end
 
+    
 
 
   end

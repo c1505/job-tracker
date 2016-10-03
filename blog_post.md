@@ -3,19 +3,24 @@
 -turn interview date into just a text field with placeholder or a different selector
 -refactor indeed.rb
 -user authoriztion
--ability to see more than the last 25 posts.
 -export to excel and/or csv
 
 
 ## Maybe
+-retrieve only posts from the last 21 days
 -create a job from posting without additional request to indeed
 -save a job from posting via javascript instead to avoid page refresh
 -dream jobs
 -Companies
 -contacts index
 -demo account that resets
+-add in tracking from indeed
+--need to first properly identify user
+-login with another service
 
 ## Done
+-ability to see more than the last 25 posts.
+
 -only show unsaved jobs in job posting view
 -only show unviewed jobs in job posting view
 - go to job edit page after clicking save to enter in more information
@@ -27,6 +32,8 @@ Could also keep track of things that just look cool to view the requirments mayb
 # Companies
 I also want to keep track of companies I am interested in even if they don't have an opening at the moment.  I could have that seperate or keep it in jobs.  For now I will track it in jobs and see how that works.
 
+# How many posts to display
+I don't think i care to see postings greater than 30 days for sure.  Probably not more than 2 weeks so I think 3 weeks is a good cutoff.
 # Recruiting contacts
 
 # Heroku
