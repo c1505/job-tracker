@@ -4,9 +4,11 @@
 -refactor indeed.rb
 -user authoriztion
 -export to excel and/or csv
+-try fakeweb gem for testing
 
 
 ## Maybe
+
 -retrieve only posts from the last 21 days
 -create a job from posting without additional request to indeed
 -save a job from posting via javascript instead to avoid page refresh
