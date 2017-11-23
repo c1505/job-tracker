@@ -1,14 +1,15 @@
 class PostingsController < ApplicationController
   def index
+    @search_term = params[:search]
     posting = Posting.new
-    if params[:search]
+    if @search_term == ""
+      flash[:notice] = "You must provide a search term in order to see job postings"
+      @postings = []
+    elsif @search_term
       @postings = posting.desired_postings(params[:search])
     else
       @postings = []
     end
-    # indeed = Indeed.new(27713, "Ruby")
-    # @postings = indeed.fetch_one
-
   end
 
   def create
@@ -38,7 +39,7 @@ class PostingsController < ApplicationController
   def not_interested
     posting_id = params["id"]
     Posting.create(not_interested: posting_id)
-    redirect_to postings_path
+    redirect_to postings_path(search: params[:search])
     flash[:notice] = "Marked as not interested.  You will not see that posting again."
   end
 end
