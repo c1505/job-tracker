@@ -32,7 +32,7 @@ gem 'terminal-notifier-guard', '~> 1.6.1'
 
 gem 'httparty'
 
-# gem 'dotenv-rails', :groups => [:development, :test]
+gem 'dotenv-rails', :groups => [:development, :test]
 # maybe add this for secrets managment
 
 
