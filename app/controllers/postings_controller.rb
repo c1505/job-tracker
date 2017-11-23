@@ -1,7 +1,11 @@
 class PostingsController < ApplicationController
   def index
     posting = Posting.new
-    @postings = posting.desired_postings
+    if params[:search]
+      @postings = posting.desired_postings(params[:search])
+    else
+      @postings = []
+    end
     # indeed = Indeed.new(27713, "Ruby")
     # @postings = indeed.fetch_one
 

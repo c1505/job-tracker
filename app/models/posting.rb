@@ -1,6 +1,6 @@
 class Posting < ActiveRecord::Base
-  def desired_postings
-    indeed = Indeed.new(27713, "Ruby")
+  def desired_postings(search_term)
+    indeed = Indeed.new(27713, search_term)
     results = indeed.fetch_all
     # if results["error"]
     #   print results["error"]
