@@ -2,18 +2,23 @@
 <%= link_to "Contacted", jobs_path + "?contacted=true" %></br>
 <%= link_to "Not Contacted", jobs_path + "?contacted=false" %></br>
 <%= link_to "All", jobs_path  %></br>
-<% @jobs.each do |job| %>
-  <h3><%= job.title %></h3>
-  <p><%= job.location %></p>
-  <p><%= job.company %></p>
-  <p><%= job.salary %></p>
-  <p><%= link_to "Original Posting", job.url %></p>
-  <% if job.contacted %>
-    contacted
-  <% else %>
-    Have not applied or contacted
-  <% end %><br>
-  <strong>Next Steps:</strong> <%= job.next_step %></br>
-  <p><a class="btn btn-primary" href="/jobs/<%= job.id %>/edit" role="button">Edit</a></p>
-  <%= button_to "Delete", job, :method => :delete, class: "btn btn-danger"  %>
-<% end %>
+<div class="row">
+  <% @jobs.each do |job| %>
+    <div class="col-md-4 thumbnail">
+      <h3><%= job.title %></h3>
+      <p><%= job.location %></p>
+      <p><%= job.company %></p>
+      <p><%= job.salary %></p>
+      <p><%= link_to "Original Posting", job.url %></p>
+      <% if job.contacted %>
+        contacted
+      <% else %>
+        Have not applied or contacted
+      <% end %><br>
+      <strong>Next Steps:</strong> <%= job.next_step %></br>
+      <p><a class="btn btn-primary" href="/jobs/<%= job.id %>/edit" role="button">Edit</a></p>
+      <%= button_to "Delete", job, :method => :delete, class: "btn btn-danger"  %>
+    </div>
+  <% end %>
+
+</div>
