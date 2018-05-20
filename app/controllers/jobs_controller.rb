@@ -1,6 +1,12 @@
 class JobsController < ApplicationController
   def index
-    @jobs = Job.all
+    if params[:contacted] == "true"
+      @jobs = Job.where(contacted: true)
+    elsif params[:contacted] == "false"
+      @jobs = Job.where(contacted: false)
+    else
+      @jobs = Job.all
+    end
   end
 
   def show
