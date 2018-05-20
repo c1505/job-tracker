@@ -1,6 +1,5 @@
-<h1>Edit</h1>
 <h2><%= @job.title %></h2>
-<%= link_to "View on Indeed", @job.url %>
+<%= link_to "View original posting", @job.url %>
 <%= simple_form_for @job do |f|%>
   <%= f.input :title %>
   <%= f.input :company %>
